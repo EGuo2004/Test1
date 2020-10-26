@@ -6,8 +6,8 @@ public class Demo{
     } else {
       printLoop(Integer.parseInt(args[0]));
     }
-    System.out.println(arrDeepToString(create2DArray(Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]))));
-    System.out.println(arrDeepToString(create2DArrayRandomized(Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]))));
+    System.out.println(arrayDeepToString(create2DArray(Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]))));
+    System.out.println(arrayDeepToString(create2DArrayRandomized(Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]))));
   }
   public static void printLoop(int a) {
     for (int i = 1; i <= a; i++) {
@@ -30,7 +30,7 @@ public class Demo{
      return "{" + output + "}";
   }
 
-  public static String arrDeepToString(int[][] arr) {
+  public static String arrayDeepToString(int[][] arr) {
     String str = "{";
     for (int i = 0; i < arr.length; i++) {
       if (i !=0) {
